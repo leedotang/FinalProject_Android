@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.androidapp_frontend">
+
+
+    <!-- 재생중 화면 어두워짐, 잠김 방지하기 위한 권한 추가 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 안드로이드앱 구글맵 연결 권한 설정 : 아래 3줄 소스 추가 -->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- INTERNET uses-permission 추가 : 안드로이드 앱 http 통신 허용 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- http는 https에 비해 보안 수준이 약하기 때문에 http 주소 이용을 위해
+         별도의 permission 설정이 필요합니다. 그래서, 다음의 18행과 같이
+         AndroidManifest.xml 파일 안에 application 태그에서
+         android:usesCleartextTraffic="true"로 설정하면
+         모든 Http 주소에 접근할 수 있습니다. -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.AndroidApp_FrontEnd">
+
+        <!-- LogInSuccess 성공 알림 클래스 추가 -->
+        <activity android:name=".LogInSuccess"></activity>
+
+        <activity android:name=".AboutActivity"></activity>
+
+        <activity android:name=".GoodsInfoActivity"></activity>
+
+        <activity android:name=".GoodsPRActivity"></activity>
+
+        <activity android:name=".LocationActivity"></activity>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDiMLCjQkSNjvhXrlN63SA3IuPsE3zJ7-w"/>
+    </application>
+
+</manifest>
