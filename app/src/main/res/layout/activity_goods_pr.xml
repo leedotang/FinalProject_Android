@@ -5,8 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".GoodsPrActivity">
+    tools:context=".GoodsPRActivity">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:autoPlay="true"
+            app:showFullScreenButton="false"
+            app:videoId="HD3wZNdgEA0" />
+    </LinearLayout>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/custom_toolbar"
@@ -48,42 +63,5 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-
-    <VideoView
-        android:id="@+id/videoView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="13dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/custom_toolbar"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/btnStart"
-        android:layout_width="416dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="9dp"
-        android:onClick="StartButton"
-        android:text="시작"
-        app:layout_constraintBottom_toTopOf="@+id/btnStop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/videoView"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/btnStop"
-        android:layout_width="419dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="86dp"
-        android:onClick="StopButton"
-        android:text="정지"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnStart"
-        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

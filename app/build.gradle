@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.android.androidapp_frontend"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 33
         versionCode 1
         versionName "1.0"
@@ -29,6 +29,9 @@ android {
 }
 
 dependencies {
+
+    // 유튜브 영상
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
 
     // 구글 맵
     implementation 'com.google.android.gms:play-services-location:17.0.0'
