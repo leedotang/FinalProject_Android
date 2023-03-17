@@ -22,43 +22,45 @@
 
     <LinearLayout
         android:id="@+id/linearLayout1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-    <Button
-        android:id="@+id/btnAbout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="회사소개"
-        android:layout_margin="3dp"
-         />
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <Button
-        android:id="@+id/btnLocation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="찾아오시는길"
-        android:layout_margin="3dp"
-         />
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회사소개"/>
 
-    <Button
-        android:id="@+id/btnGoodsPr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="상품홍보"
-        android:layout_margin="3dp"
-         />
+        <Button
+            android:id="@+id/btnLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="찾아오시는길" />
 
-    <Button
-        android:id="@+id/btnGoodsInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="상품정보"
-        android:layout_margin="3dp"
-         />
+        <Button
+            android:id="@+id/btnGoodsPr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상품홍보" />
 
+        <Button
+            android:id="@+id/btnGoodsInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="상품정보" />
 
+        <Button
+            android:id="@+id/btnGoodsInfoRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="상품정보(라디오그룹형)" />
 
     </LinearLayout>
+
 
 </LinearLayout>

@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LogInSuccess extends AppCompatActivity {
 
-    Button btnGoMain, btnAbout, btnLocation, btnGoodsInfo, btnGoodsPr;
+    Button btnGoMain, btnAbout, btnLocation, btnGoodsPr, btnGoodsInfo, btnGoodsInfoRadio;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -20,8 +20,10 @@ public class LogInSuccess extends AppCompatActivity {
         btnGoMain = (Button) findViewById(R.id.btnGoMain);
         btnAbout = (Button) findViewById(R.id.btnAbout);
         btnLocation = (Button) findViewById(R.id.btnLocation);
-        btnGoodsInfo = (Button) findViewById(R.id.btnGoodsInfo);
         btnGoodsPr = (Button) findViewById(R.id.btnGoodsPr);
+        btnGoodsInfo = (Button) findViewById(R.id.btnGoodsInfo);
+        btnGoodsInfoRadio = (Button) findViewById(R.id.btnGoodsInfoRadio);
+
         btnGoMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,10 +40,10 @@ public class LogInSuccess extends AppCompatActivity {
             }
         });
 
-        btnGoodsInfo.setOnClickListener(new View.OnClickListener() {
+        btnLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), GoodsInfoActivity.class);
+                Intent intent = new Intent(getApplicationContext(), LocationActivity.class);
                 startActivity(intent);
             }
         });
@@ -54,10 +56,18 @@ public class LogInSuccess extends AppCompatActivity {
             }
         });
 
-        btnLocation.setOnClickListener(new View.OnClickListener() {
+        btnGoodsInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), LocationActivity.class);
+                Intent intent = new Intent(getApplicationContext(), GoodsInfoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnGoodsInfoRadio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), GoodsInfoActivityRadioGroup.class);
                 startActivity(intent);
             }
         });

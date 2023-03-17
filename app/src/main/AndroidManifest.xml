@@ -39,6 +39,9 @@
 
         <activity android:name=".LocationActivity"></activity>
 
+        <!-- RadioGroup Button 활용 액티버티 클래스 추가 -->
+        <activity android:name=".GoodsInfoActivityRadioGroup"></activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
