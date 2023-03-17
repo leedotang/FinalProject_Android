@@ -68,7 +68,7 @@ public class GoodsInfoActivityRadioGroup extends AppCompatActivity {
                 switch (rGroup.getCheckedRadioButtonId()) {
                     case R.id.rdoDog:
                         ivPet.setImageResource(petID[0]);
-                        dlg.setTitle("강아지");
+                        dlg.setTitle("누구세요");
                         break;
                     case R.id.rdoCat:
                         ivPet.setImageResource(petID[1]);
