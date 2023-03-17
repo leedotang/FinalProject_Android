@@ -51,7 +51,9 @@ public class MainActivity extends AppCompatActivity {
 
                 // Retrofit 객체 생성 및 MoshiConverter 추가
                 Retrofit retrofit = new Retrofit.Builder()
-                        .baseUrl("http://192.168.0.218:9008/")
+
+                        // 10.0.2.2 : 로컬호스트로 이동 가능
+                        .baseUrl("http://10.0.2.2:9008/")
                         .addConverterFactory(MoshiConverterFactory.create(moshi)).build();
 
                 MemberVOApi api = retrofit.create(MemberVOApi.class);
