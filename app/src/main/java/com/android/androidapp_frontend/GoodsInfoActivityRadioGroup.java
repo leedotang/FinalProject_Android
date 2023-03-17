@@ -16,7 +16,7 @@ public class GoodsInfoActivityRadioGroup extends AppCompatActivity {
     Button btnGoMain, btnHome;
 
     RadioGroup rGroup;
-    RadioButton rdoDog, rdoCat, rdoRabbit, rdoHorse;
+    RadioButton rdol01, rdol02, rdol03, rdol04;
     Button btnImage;
 
     @Override
@@ -44,16 +44,16 @@ public class GoodsInfoActivityRadioGroup extends AppCompatActivity {
         });
 
         rGroup = (RadioGroup) findViewById(R.id.rGroup);
-        rdoDog = (RadioButton) findViewById(R.id.rdoDog);
-        rdoCat = (RadioButton) findViewById(R.id.rdoCat);
-        rdoRabbit = (RadioButton) findViewById(R.id.rdoRabbit);
-        rdoHorse = (RadioButton) findViewById(R.id.rdoHorse);
+        rdol01 = (RadioButton) findViewById(R.id.rdol01);
+        rdol02 = (RadioButton) findViewById(R.id.rdol02);
+        rdol03 = (RadioButton) findViewById(R.id.rdol03);
+        rdol04 = (RadioButton) findViewById(R.id.rdol04);
         btnImage = (Button) findViewById(R.id.btnImage);
 
-        final Integer[] radioID = {R.id.rdoDog, R.id.rdoCat, R.id.rdoRabbit,
-                R.id.rdoHorse};
-        final Integer[] petID = {R.drawable.dog, R.drawable.cat,
-                R.drawable.rabbit, R.drawable.horse};
+        final Integer[] radioID = {R.id.rdol01, R.id.rdol02, R.id.rdol03,
+                R.id.rdol04};
+        final Integer[] petID = {R.drawable.l01, R.drawable.l02,
+                R.drawable.l03, R.drawable.l04};
 
         btnImage.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -66,21 +66,21 @@ public class GoodsInfoActivityRadioGroup extends AppCompatActivity {
                         .findViewById(R.id.ivPet);
 
                 switch (rGroup.getCheckedRadioButtonId()) {
-                    case R.id.rdoDog:
+                    case R.id.rdol01:
                         ivPet.setImageResource(petID[0]);
-                        dlg.setTitle("누구세요");
+                        dlg.setTitle("피치 앤 블랙티");
                         break;
-                    case R.id.rdoCat:
+                    case R.id.rdol02:
                         ivPet.setImageResource(petID[1]);
-                        dlg.setTitle("고양이");
+                        dlg.setTitle("100% 제주산 말차");
                         break;
-                    case R.id.rdoRabbit:
+                    case R.id.rdol03:
                         ivPet.setImageResource(petID[2]);
-                        dlg.setTitle("토끼");
+                        dlg.setTitle("악마 초코");
                         break;
-                    case R.id.rdoHorse:
+                    case R.id.rdol04:
                         ivPet.setImageResource(petID[3]);
-                        dlg.setTitle("말");
+                        dlg.setTitle("콜드브루");
                         break;
                 }
 

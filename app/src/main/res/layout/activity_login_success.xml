@@ -58,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="상품정보(라디오그룹형)" />
+            android:text="대표메뉴" />
 
     </LinearLayout>
 

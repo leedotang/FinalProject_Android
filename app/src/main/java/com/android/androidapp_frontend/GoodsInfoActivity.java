@@ -58,20 +58,14 @@ public class GoodsInfoActivity extends AppCompatActivity {
             return posterID.length;
         }
 
-        Integer[] posterID = {R.drawable.mov01, R.drawable.mov02,
-                R.drawable.mov03, R.drawable.mov04, R.drawable.mov05,
-                R.drawable.mov06, R.drawable.mov07, R.drawable.mov08,
-                R.drawable.mov09, R.drawable.mov10, R.drawable.mov01,
-                R.drawable.mov02, R.drawable.mov03, R.drawable.mov04,
-                R.drawable.mov05, R.drawable.mov06, R.drawable.mov07,
-                R.drawable.mov08, R.drawable.mov09, R.drawable.mov10,
-                R.drawable.mov01, R.drawable.mov02, R.drawable.mov03,
-                R.drawable.mov04, R.drawable.mov05, R.drawable.mov06,
-                R.drawable.mov07, R.drawable.mov08, R.drawable.mov09,
-                R.drawable.mov10, R.drawable.mov01, R.drawable.mov02,
-                R.drawable.mov03, R.drawable.mov04, R.drawable.mov05,
-                R.drawable.mov06, R.drawable.mov07, R.drawable.mov08,
-                R.drawable.mov09, R.drawable.mov10};
+        Integer[] posterID = {R.drawable.l01, R.drawable.l02,
+                R.drawable.l03, R.drawable.l04, R.drawable.l05,
+                R.drawable.l06, R.drawable.l07, R.drawable.l08,
+                R.drawable.l09, R.drawable.g01,
+                R.drawable.g02, R.drawable.g03, R.drawable.g04,
+                R.drawable.g05, R.drawable.g06, R.drawable.g07,
+                R.drawable.p01, R.drawable.p02, R.drawable.p03,
+                };
 
         @Override
         public Object getItem(int i) {
@@ -86,7 +80,7 @@ public class GoodsInfoActivity extends AppCompatActivity {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             ImageView imageView = new ImageView(context);
-            imageView.setLayoutParams(new GridView.LayoutParams(200, 300));
+            imageView.setLayoutParams(new GridView.LayoutParams(350, 500));
             imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
             imageView.setPadding(5, 5, 5, 5);
             imageView.setImageResource(posterID[position]);
@@ -100,7 +94,7 @@ public class GoodsInfoActivity extends AppCompatActivity {
                             GoodsInfoActivity.this);
                     ImageView ivPoster = (ImageView) dialogView.findViewById(R.id.ivPoster);
                     ivPoster.setImageResource(posterID[pos]);
-                    dlg.setTitle("클릭 선택 포스터 이미지!");
+                    dlg.setTitle("카페 천성 메뉴 모음!!");
                     dlg.setView(dialogView);
                     dlg.setNegativeButton("닫기", null);
                     dlg.show();

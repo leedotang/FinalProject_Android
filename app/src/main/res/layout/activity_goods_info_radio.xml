@@ -50,7 +50,7 @@
 
     <RadioGroup
         android:id="@+id/rGroup"
-        android:layout_width="114dp"
+        android:layout_width="150dp"
         android:layout_height="202dp"
         android:layout_marginTop="128dp"
         android:orientation="vertical"
@@ -61,28 +61,28 @@
         tools:ignore="MissingConstraints">
 
         <RadioButton
-            android:id="@+id/rdoDog"
+            android:id="@+id/rdol01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="강아지" />
+            android:text="피치 앤 블랙티" />
 
         <RadioButton
-            android:id="@+id/rdoCat"
+            android:id="@+id/rdol02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="고양이" />
+            android:text="100% 제주산 말차" />
 
         <RadioButton
-            android:id="@+id/rdoRabbit"
+            android:id="@+id/rdol03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="토끼" />
+            android:text="악마 초코" />
 
         <RadioButton
-            android:id="@+id/rdoHorse"
+            android:id="@+id/rdol04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="말" />
+            android:text="콜드브루" />
     </RadioGroup>
 
     <Button
@@ -90,7 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="332dp"
-        android:text="그림보기"
+        android:text="메뉴 보기"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.804"
         app:layout_constraintStart_toStartOf="parent"
