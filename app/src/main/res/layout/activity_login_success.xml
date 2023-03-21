@@ -17,47 +17,61 @@
     <Button
         android:id="@+id/btnGoMain"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="20dp"
         android:text="로그아웃"/>
 
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical"
         android:gravity="center">
 
         <Button
             android:id="@+id/btnAbout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
             android:text="회사소개"/>
 
         <Button
             android:id="@+id/btnLocation"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
             android:text="찾아오시는길" />
 
         <Button
             android:id="@+id/btnGoodsPr"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
             android:text="천성 음료 제조 영상" />
 
         <Button
             android:id="@+id/btnGoodsInfo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
             android:text="상품정보" />
 
         <Button
             android:id="@+id/btnGoodsInfoRadio"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
             android:text="대표메뉴" />
 
     </LinearLayout>
