@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <TextView
+        <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="로그인 성공"
@@ -36,7 +36,7 @@
             android:layout_weight="1"
             android:layout_marginBottom="10dp"
             android:textSize="20dp"
-            android:text="회사소개"/>
+            android:text="카페 천성 홈페이지"/>
 
         <Button
             android:id="@+id/btnLocation"
