@@ -13,7 +13,7 @@
         android:layout_width="411dp"
         android:layout_height="69dp"
         android:layout_marginBottom="1dp"
-        android:background="@color/purple_500"
+        android:background="@color/black"
         android:gravity="right"
         app:layout_constraintBottom_toTopOf="@+id/videoView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,8 +28,8 @@
             android:layout_margin="10dp"
             android:background="#0000ff"
             android:text="로그아웃"
-            android:textColor="#ffffff"
-            app:backgroundTint="#0000FF"
+            android:textColor="#000000"
+            app:backgroundTint="#ffffff"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,8 +41,8 @@
             android:layout_margin="10dp"
             android:background="#0000ff"
             android:text="홈메뉴로"
-            android:textColor="#ffffff"
-            app:backgroundTint="#0000FF"
+            android:textColor="#000000"
+            app:backgroundTint="#ffffff"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
