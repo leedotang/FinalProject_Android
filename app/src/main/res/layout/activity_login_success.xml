@@ -8,11 +8,13 @@
     android:orientation="vertical"
     android:gravity="center">
 
-        <TextView
+
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="로그인 성공"
-        android:gravity="center"/>
+        android:layout_height="75dp"
+        android:layout_marginBottom="75dp"
+        app:srcCompat="@drawable/logo" />
 
     <Button
         android:id="@+id/btnGoMain"
