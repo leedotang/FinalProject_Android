@@ -78,7 +78,7 @@ public class MainFragment extends Fragment implements OnMapReadyCallback {
         MapsInitializer.initialize(this.getActivity());
 
         // Updates the location and zoom of the MapView
-        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(new LatLng(37.5662952,126.9779451), 14);
+        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(new LatLng(37.503174,126.879052), 14);
 
         googleMap.animateCamera(cameraUpdate);
 
