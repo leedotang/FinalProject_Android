@@ -58,6 +58,8 @@ public class AboutActivity extends AppCompatActivity {
         mWebSettings.setCacheMode(WebSettings.LOAD_NO_CACHE); // 브라우저 캐시 허용 여부
         mWebSettings.setDomStorageEnabled(true); // 로컬저장소 허용 여부
 
-        mWebView.loadUrl("http://192.168.0.218:9005/"); // 웹뷰에 표시할 웹사이트 주소, 웹뷰 시작
+        // 각자 아이피 주소를 넣어주세요
+        mWebView.loadUrl("http://10.0.2.2:9005/"); // 웹뷰에 표시할 웹사이트 주소, 웹뷰 시작
+
     }
 }

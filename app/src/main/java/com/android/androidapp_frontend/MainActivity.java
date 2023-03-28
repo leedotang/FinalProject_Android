@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
                         // 10.0.2.2 : 로컬호스트로 이동 가능
                         .baseUrl("http://10.0.2.2:9008/")
+
                         .addConverterFactory(MoshiConverterFactory.create(moshi)).build();
 
                 MemberVOApi api = retrofit.create(MemberVOApi.class);
