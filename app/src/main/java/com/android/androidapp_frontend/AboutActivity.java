@@ -61,5 +61,6 @@ public class AboutActivity extends AppCompatActivity {
         // 각자 아이피 주소를 넣어주세요
         mWebView.loadUrl("http://10.0.2.2:9005/"); // 웹뷰에 표시할 웹사이트 주소, 웹뷰 시작
 
+
     }
 }
